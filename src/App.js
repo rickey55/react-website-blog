@@ -11,7 +11,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 function App() {
     const user = false;
     return (
-        <Router>
+        <Router basename={ process.env.PUBLIC_URL }>
             <TopBar />
             <Switch>
                 <Route path="/" exact>
