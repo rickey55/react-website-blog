@@ -19,11 +19,7 @@ function App() {
                 </Route>
                 <Route path="/register">{user ? <Home /> : <Register />}</Route>
                 <Route path="/login">{user ? <Home /> : <Login />}</Route>
-                <Route path="/write">
-                    <Route path="/register">
-                        {user ? <Write /> : <Register />}
-                    </Route>
-                </Route>
+                <Route path="/write">{user ? <Write /> : <Register />}</Route>
                 <Route path="/settings">
                     {user ? <Settings /> : <Register />}
                 </Route>
